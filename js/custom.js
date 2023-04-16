@@ -1,16 +1,16 @@
+
 $(document).ready(function() {
     $("#news-slider").owlCarousel({
-        items : 3,
+        loop:true,
+        items : 4,
         itemsDesktop:[1199,3],
         itemsDesktopSmall:[980,2],
         itemsMobile : [600,1],
         navigation:true,
         navigationText:["",""],
         pagination:true,
-        autoPlay:true
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoHeight: true,
     });
 });
-
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
